@@ -1,0 +1,18 @@
+* {
+    /* border: solid; */
+}
+
+.bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+}
+
+.form-container {}
+
+.form-input {
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+    width: 50%;
+    height: 100%;
+}
