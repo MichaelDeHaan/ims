@@ -17,6 +17,9 @@ public class ProductController {
     String home(Model model) {
         List<Product> products = productService.findAll();
         model.addAttribute("products", products);
+        model.addAttribute("productCount", productService.getTotalProducts());
+        model.addAttribute("outOfStockProducts", productService.getOutOfStockProducts());
+        model.addAttribute("lowStockProducts", productService.getLowStockProducts(10));
         model.addAttribute("product", new Product());
         return "index";
     }

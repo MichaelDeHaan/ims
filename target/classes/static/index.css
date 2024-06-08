@@ -8,11 +8,21 @@
     fill: currentColor;
 }
 
-.form-container {}
-
 .form-input {
     border: 1.5px solid lightgray;
     border-radius: 5px;
     width: 50%;
     height: 100%;
+}
+
+.bg-green {
+    background-color: #41cf9d !important;
+}
+
+.bg-orange {
+    background-color: #FF6B6B !important;
+}
+
+.bg-blue {
+    background-color: #3A86FF !important;
 }

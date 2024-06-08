@@ -33,4 +33,16 @@ public class ProductService {
         existingProduct.setQty(editedProduct.getQty());
         productRepository.save(existingProduct);
     }
+
+    public long getTotalProducts(){
+        return productRepository.count();
+    }
+
+    public long getOutOfStockProducts(){
+        return productRepository.countByQty(0);
+    }
+
+    public long getLowStockProducts(int threshold) {
+        return productRepository.countByQtyLessThanAndQtyGreaterThan(threshold, 0);
+    }
 }
